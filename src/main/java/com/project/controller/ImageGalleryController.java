@@ -54,7 +54,21 @@ public class ImageGalleryController {
 	
 	@PostMapping("/image/saveImageDetails")
 	public @ResponseBody ResponseEntity<?> createProduct(@RequestParam("name") String name,
-			@RequestParam("city") String city,@RequestParam("state") String state, Model model, HttpServletRequest request
+			@RequestParam("state") String state,
+			@RequestParam("fathername") String fathername,
+			@RequestParam("dob") String dob,
+			@RequestParam("occupation") String occupation,
+			@RequestParam("village") String village,
+			@RequestParam("post") String post,
+			@RequestParam("dist") String dist,
+			@RequestParam("city") String city,
+			@RequestParam("pin") String pin,
+			@RequestParam("contact") String contact,
+			@RequestParam("gender") String gender,
+
+
+			
+			Model model, HttpServletRequest request
 			,final @RequestParam("image") MultipartFile file) {
 		try {
 			//String uploadDirectory = System.getProperty("user.dir") + uploadFolder;
@@ -72,9 +86,30 @@ public class ImageGalleryController {
 			Date createDate = new Date();
 			log.info("Name: " + names[0]+" "+filePath);
 	/*		log.info("description: " + descriptions[0]); */
+			
+			
 			log.info("city : "+city);
 			log.info("state : "+state);
+			log.info("fathername : "+fathername);
+			log.info("dob : "+dob);
+			log.info("occupation : "+occupation);
+			log.info("village : "+village);
+			log.info("post : "+post);
+			log.info("dist : "+dist);
+			log.info("city : "+city);
+			log.info("pin : "+pin);
+			log.info("gender : "+gender);
+			log.info("contact : "+contact);
 
+
+			
+			
+			
+			
+			
+			
+			
+			
 	/*		log.info("price: " + price); */
 			try {
 				File dir = new File(uploadDirectory);
@@ -93,10 +128,20 @@ public class ImageGalleryController {
 			byte[] imageData = file.getBytes();
 			ImageGallery imageGallery = new ImageGallery();
 			imageGallery.setName(names[0]);
-			imageGallery.setImage(imageData);
+			imageGallery.setFathername(fathername);
+			imageGallery.setDob(dob);
+			imageGallery.setOccupation(occupation);
+			imageGallery.setVillage(village);
+			imageGallery.setPost(post);
+			imageGallery.setDist(dist);
 			imageGallery.setCity(city);
-/*			imageGallery.setDescription(descriptions[0]); */
+			imageGallery.setPin(pin);
 			imageGallery.setState(state);
+			imageGallery.setContact(contact);
+			imageGallery.setGender(gender);
+			
+			imageGallery.setImage(imageData);
+
 			imageGallery.setCreateDate(createDate);
 			imageGalleryService.saveImage(imageGallery);
 			log.info("HttpStatus===" + new ResponseEntity<>(HttpStatus.OK));
