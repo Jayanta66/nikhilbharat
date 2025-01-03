@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+          
+<title>Nikhil Bharat Bangali Samanwya Samiti</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+
+
+<style> 
+*{
+
+
+margin: 0;
+padding: 0;
+
+border:0;
+
+}
+		body { 
+			margin: 0; 
+			padding: 0;
+			  background:#b3ff1a;
+			    background-image: url("");
+      background-size: 100%;
+
+  background-size: cover;
+  background-attachment: fixed; 
+		} 
+
+	/*	div { 
+			position: absolute; 
+			top: 50%; 
+			left: 50%; 
+			transform: translate(-50%, -50%); 
+		} 
+*/
+		h6 { 
+			font-size: 2.5rem; 
+			font-family: serif; 
+			color: #ff1a1a;
+			background-color: #ffe6f9;
+			text-align: center;
+			animation: animate 
+				1.5s linear infinite; 
+		} 
+
+		@keyframes animate { 
+			0% { 
+				opacity: 0; 
+			} 
+
+			50% { 
+				opacity: 0.7; 
+			} 
+
+			100% { 
+				opacity: 0; 
+			} 
+		} 
+		
+		head{
+
+display: flex;
+justify-content: space-around;
+align-items: space-around;
+
+
+}
+
+.navbar navbar-inverse navbar-fixed-top{
+    display:center;
+    
+    
+}
+
+h1{
+text-align: center;
+color:#ffffff;
+}
+		
+	</style> 
+
+  <h1>Nikhil Bharat Bangali Samanwya Samiti</h1>
+   <h6>&nbsp THANK YOU FOR VISITING US .&nbsp &nbsp &nbsp  PLEASE REGISTER. &nbsp &nbsp &nbsp &nbsp &nbsp IT'S OUR PLEASURE, YOU ARE HERE.</h6>
+   <h6>&nbsp TO KNOW MORE ABOUT US , YOU HAVE TO REGISTER FIRST THEN YOU CAN VISIT US.</h6>
+	
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-6 col-md-offset-3">
+								<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_KQvBXR0md7W6dR" async> </script> </form>
+				<h1> User Login Page </h1>
+				<form th:action="@{/login}" method="post">
+					
+					<!-- error message -->
+					<div th:if="${param.error}">
+						<div class="alert alert-danger">Invalid username or
+							password.</div>
+					</div>
+				
+					<!-- logout message -->
+					<div th:if="${param.logout}">
+						<div class="alert alert-info">You have been logged out.</div>
+					</div>
+					
+					<div class = "form-group">
+						<label for ="username"> Username </label> :
+						<input type="text" class = "form-control" id ="username" name = "username"
+						placeholder="Enter Email ID" autofocus="autofocus">
+					</div>
+					
+					<div class="form-group">
+						<label for="password">Password</label>: <input type="password"
+							id="password" name="password" class="form-control"
+							placeholder="Enter Password" />
+					</div>
+					
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<input type="submit" name="login-submit" id="login-submit"
+									class="form-control btn btn-primary" value="Log In" />
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="form-group">
+						<span>New user? <a href="/" th:href="@{/registration}">Register
+								here</a></span>
+				</div>
+				
+
+
+</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
