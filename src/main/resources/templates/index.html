@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head th:style="'background: url(/images/hindu_refugee.jpg) no-repeat fixed;background-size: cover;'">
+<meta charset="ISO-8859-1">
+    	<link rel="stylesheet" type="text/css" href="" th:href="@{/css/index.css}">
+	<link rel="stylesheet" type="text/css" href="" th:href="@{/css/video_player2.css}">
+	<script src="static/js/" th:src="@{/js/video_player2.js}" type="text/javascript"></script>
+  <title>developed by Jayanta Halder</title>
+  <h1>Nikhil Bharat Bangali Samanwya Samiti</h1>
+  
+  
+<style> 
+		body { 
+			margin: 0; 
+			padding: 0; 
+		} 
+
+	/*	div { 
+			position: absolute; 
+			top: 50%; 
+			left: 50%; 
+			transform: translate(-50%, -50%); 
+		} 
+*/
+		h6 { 
+			font-size: 1.0rem; 
+			font-family: serif; 
+			color: #ff1a1a;
+			background-color: #ffe6f9;
+			text-align: center;
+			animation: animate 
+				1.5s linear infinite; 
+		} 
+
+		@keyframes animate { 
+			0% { 
+				opacity: 0; 
+			} 
+
+			50% { 
+				opacity: 0.7; 
+			} 
+
+			100% { 
+				opacity: 0; 
+			} 
+		} 
+	</style> 
+
+
+
+
+   <h6>&nbsp THANK YOU FOR VISITING US .&nbsp &nbsp &nbsp  PLEASE REGISTER. &nbsp &nbsp &nbsp &nbsp &nbsp IT'S OUR PLEASURE, YOU ARE HERE.</h6>
+
+
+
+  
+
+    <link rel="stylesheet" type="text/css" href="" th:href="@{/css/in.css}">
+    <script src="" th:src="@{/js/easy_background.js}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href=""  th:href="@{/css/slide_image.css}">
+    <br>
+    <br>
+    
+  
+  
+  
+  </head>
+<body th:style="'background: url(/images/hindu_refugee.jpg) no-repeat fixed;background-size: cover;'">
+
+<div>
+    <div calss= "jay">
+        <a th:href="@{/index}">HOME</a>
+     	<a th:href="@{/photo_gallary}" >GALLARY</a>
+     	        <a th:href="@{/videolist}">VIDEOS</a>
+     	<a th:href="@{/icard}" >ID-CARD</a>             	
+    </div>
+    
+    <div class="logout">     	
+    <a class="logout" th:href="@{/logout}">logout</a>
+    </div>
+    </div>
+<div class="welcome">
+		Welcome <span sec:authentication="principal.username"> User</span>
+	</div>
+
+    
+ 
+	
+	
+<div class="slideshow">
+  <div class="slideshow-container slide" >
+
+<img src="" width="300" height="400" th:src="@{images/bengali-hindu-refugees.jpg}"/>
+<img src="" width="300" height="400" th:src="@{images/hindus_2.jpg}"/>
+<img src="" width="300" height="400" th:src="@{images/caravan-of-sikh-refugees-india-1947_u-l-q108d3u0.jpg}"/>
+<img src="" width="300" height="400" th:src="@{images/download-1-24.jpg}"/>
+<img src="" width="300" height="400" th:src="@{images/hindu_refugee_2.jpg}"/>
+
+  </div>
+</div>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    
+    
+}
+
+</style>
+
+<marquee vspace="0">
+<font size="2" color="#b3ff1a">
+<h2>
+Welcome to "Nikhil Bharat Bangali Samanwya Samiti"
+
+            
+<style>
+h1 {
+  text-shadow: 2px 2px #b3ff1a;
+  text-align: center;
+  
+ /*  width: 10px;
+  height: 10px; */
+}
+
+
+</style>
+</h2>
+</font>
+</marquee>
+
+<marquee  vspace="0" behavior="scroll" direction="left">
+<img class="run"  src="images/bengali-hindu-refugees.jpg" />
+
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_KQvBXR0md7W6dR" async> </script> </form>
+
+   <h2>Stay with us</h2>         
+ <style>
+h1 {
+
+  color: white;
+
+  text-shadow: 2px 2px 4px #000000;
+
+ /*  width: 10px;
+  hrgb(14, 230, 241)(255, 0, 128)ht: 10px; */
+}
+
+
+</style>
+
+
+
+
+  
+</marquee>
+            
+  
+  <section class="half">
+
+          <!--PYAMENT LINK -->
+
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_KQvBXR0md7W6dR" async> </script> </form>
+
+            
+<style>
+h1 {
+  text-shadow: 2px 2px rgb(179, 255, 26);
+ /*  width: 10px;
+  height: 10px; */
+}
+
+
+</style>
+
+
+
+<div class="w3-content w3-section">
+  <img class="mySlides" src="" th:src="@{/images/hindu_refugee.jpg}"  >
+  <img class="mySlides" src="" th:src="@{/images/hindu_refugee_2.jpg}">
+  <img class="mySlides" scr="" th:src="@{/images/Refugee_3.jpg}">
+</div>
+
+
+
+</style>
+
+<script class="runn">
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script class="runn">
+
+
+<!--
+        <img src="hindu_refugee.jpg" alt="internet image" width="300" height="200"></img>
+
+
+    <br>
+
+        <img src="Refugee_3.jpg" alt="internet image"  width="200" height="120"></img>
+
+        <br>
+
+         <img src="hindu_refugee.jpg" alt="internet image" width="200" height="90"></img>
+
+
+       -->
+
+    </section class="half">
+    
+    
+    
+    
+    <h2>WATCH HERE :</h2>
+
+  <div class="videoWrapper">
+   <iframe id="player1" 
+    width="500" height="320" src="https://www.youtube.com/embed/9-sWNeBICZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+    
+</div>
+
+  <div id="allvideos">
+        <h2>Videos here : </h2><br>
+    <div class="video">
+    <video src="videos/ola" width="420px" height="480px" controls preload="none">
+    </video>
+</div>
+
+    <div class="video">
+    <video src="videos/ola" width="420px" height="480px" controls preload="none">
+    </video>
+</div>
+    <div class="video">
+    <video src="videos/ola" width="420px" height="480px" controls preload="none">
+    </video>
+</div>
+    <div class="video">
+    <video src="videos/ola" width="420px" height="480px" controls preload="none">
+    </video>
+</div>
+
+
+</div>
+</body>
+</html>

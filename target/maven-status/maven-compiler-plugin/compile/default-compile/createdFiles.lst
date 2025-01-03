@@ -1,0 +1,8 @@
+com\project\model\ImageGallery.class
+com\project\repository\UserRepository.class
+com\project\controller\ImageGalleryController.class
+com\project\model\Role.class
+com\project\model\User.class
+com\project\web\MainController.class
+com\project\repository\ImageGalleryRepository.class
+com\project\service\ImageGalleryService.class
