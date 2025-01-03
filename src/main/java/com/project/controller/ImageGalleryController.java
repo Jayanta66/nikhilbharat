@@ -175,6 +175,20 @@ public class ImageGalleryController {
 				if (imageGallery.isPresent()) {
 					model.addAttribute("id", imageGallery.get().getId());
 					model.addAttribute("name", imageGallery.get().getName());
+					model.addAttribute("fathername", imageGallery.get().getFathername());
+
+					
+					
+					model.addAttribute("dob", imageGallery.get().getDob());
+					model.addAttribute("occupation", imageGallery.get().getOccupation());
+					model.addAttribute("village", imageGallery.get().getVillage());
+					model.addAttribute("post", imageGallery.get().getPost());
+					model.addAttribute("dist", imageGallery.get().getDist());
+					model.addAttribute("contact", imageGallery.get().getContact());
+					model.addAttribute("pin", imageGallery.get().getPin());
+					model.addAttribute("gender", imageGallery.get().getGender());
+
+
 					model.addAttribute("city", imageGallery.get().getCity());
 		/*			model.addAttribute("price", imageGallery.get().getPrice()); */
 					model.addAttribute("state", imageGallery.get().getState());
