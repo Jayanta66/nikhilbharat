@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IcardApplication {
+public class ProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(IcardApplication.class, args);
+		SpringApplication.run(ProjectApplication.class, args);
 		//package clean install
 		
 	//	db name : nikhilbharat_nb
