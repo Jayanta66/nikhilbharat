@@ -1,0 +1,55 @@
+
+body {
+  background:#98FB98;
+  
+  
+  background-image: url("bg2.jpg");
+
+}
+
+
+img{
+
+    
+
+  font-variant: small-caps;
+  /*
+  opacity: 0.5; */
+
+width: 100px;
+  height: 40px;
+
+
+   font-size: 15px;
+ /* border-color:#000000; 
+  text-shadow: -1px 0 blue, 0 1px green, 1px 0 green, 0 -1px green;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, "Time New Roman", block; 
+  border-radius: 10px; */
+  
+  padding: 5px 5px;
+  
+  margin: 5px 5px;
+
+}
+ 
+img:hover{
+    background: #eb4034;
+    color: #ebe534;
+
+}
+
+
+
+img:focus{
+    background: #4cf565;
+    color: #0006CC;
+
+} 
+
+
+
+img:active{
+  border: 5px solid #ebe534;
+}
