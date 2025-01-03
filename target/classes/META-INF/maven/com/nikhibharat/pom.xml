@@ -61,19 +61,6 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 		</dependency>
 
-
-
-		<!-- 	
-    <dependency>
-      <groupId>com.google.appengine</groupId>
-      <artifactId>appengine-api-1.0-sdk</artifactId>
-    </dependency>
-    -->
-
-		<!-- Test Dependencies -->
-
-
-
 	</dependencies>
 
 	<build>
