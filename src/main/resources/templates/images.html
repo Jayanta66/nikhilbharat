@@ -13,7 +13,7 @@
 <body>
 	<br>
 	<h1 class="text-center">
-		Nikhil Varat ID-Card List <a href="/index"
+		Nikhil Bharat ID-Card List <a href="/index"
 			class="btn btn-danger text-right">Go Home</a>
 	</h1>
 	<br>
@@ -33,9 +33,8 @@
 				<th>village</th>
 				<th>post</th>
 				<th>dist</th>
-				<th>city</th>
-				<th>pin</th>
 				<th>contact</th>
+				<th>pin</th>
 
 
 				<th>Created date</th>
@@ -50,6 +49,7 @@
 					class="card img-fluid" style="width: 300px" alt="" /></td>
 				<td th:text="${imageGallery.city}"></td>
 
+				<td th:text="${imageGallery.state}"></td>
 
 				<td th:text="${imageGallery.fathername}"></td>
 				<td th:text="${imageGallery.dob}"></td>
@@ -57,13 +57,12 @@
 				<td th:text="${imageGallery.village}"></td>
 				<td th:text="${imageGallery.post}"></td>
 				<td th:text="${imageGallery.dist}"></td>
-				<td th:text="${imageGallery.pin}"></td>
 				<td th:text="${imageGallery.contact}"></td>
 
+				<td th:text="${imageGallery.pin}"></td>
 
 
 
-				<td th:text="${imageGallery.state}"></td>
 				<td
 					th:text="${#dates.format({imageGallery.createDate}, 'dd-MM-yyyy')}" /></td>
 				<td><a th:href="@{/image/imageDetails(id=${imageGallery.id})}"
