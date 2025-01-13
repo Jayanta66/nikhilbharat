@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Nikhil Bharat Bangali Samanwya Samiti</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<br>
+	<div class="banner-bootom-w3-agileits py-5">
+		<div class="container py-xl-4 py-lg-2">
+			<!-- tittle heading -->
+			<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
+				<span>N</span>ikhil <span>Bha</span>arat <span>Samanwya</span> <span>Samiti</span> <span>I</span>card
+			</h3>
+			<h2 style="text-align:center">Reg : IV-190200734/2020</h2>
+			
+			<br>
+			<!-- //tittle heading -->
+			<div class="row">
+				<div class="col-lg-5 col-md-8 single-right-left ">
+					<div class="grid images_3_of_2">
+						<div class="flexslider">
+							<div class="thumb-image">
+								<img th:src="@{${'/image/display/'+id}}"
+									class="img img-responsive img-fluid" alt="">
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-7 single-right-left simpleCart_shelfItem">
+					Nikhil Varat ID Number: <span th:text="${id}" class="mb-3"></span><br>
+
+					Name: <span th:text="${name}" class="mb-3"></span>
+
+
+					<div class="product-single-w3l">
+						Father's Name: <span th:text="${fathername}" class="my-sm-4 my-3">
+						</span>
+					</div>
+
+					<div class="product-single-w3l">
+						Date of birth: <span th:text="${dob}" class="my-sm-4 my-3"> </span>
+					</div>
+
+					<div class="product-single-w3l">
+						Occupation: <span th:text="${occupation}" class="my-sm-4 my-3">
+						</span>
+					</div>
+
+
+					<div class="product-single-w3l">
+						Village: <span th:text="${village}" class="my-sm-4 my-3"> </span>
+					</div>
+
+					<div class="product-single-w3l">
+						Post: <span th:text="${post}" class="my-sm-4 my-3"> </span>
+					</div>
+
+
+					<div class="product-single-w3l">
+						Dist: <span th:text="${dist}" class="my-sm-4 my-3"> </span>
+					</div>
+
+					<div class="product-single-w3l">
+						City: <span th:text="${city}" class="my-sm-4 my-3"> </span>
+					</div>
+
+
+					<div class="product-single-w3l">
+						Pin: <span th:text="${pin}" class="my-sm-4 my-3"> </span>
+					</div>
+
+					<div class="product-single-w3l">
+						State: <span th:text="${state}" class="my-sm-4 my-3"> </span>
+					</div>
+
+
+					<div class="product-single-w3l">
+						Contact: <span th:text="${contact}" class="my-sm-4 my-3"> </span>
+					</div>
+
+
+
+					<div class="product-single-w3l">
+						Gender: <span th:text="${gender}" class="my-sm-4 my-3"> </span>
+					</div>
+
+
+					<br> <a href="/image/show">Go Back</a> &emsp;<a href="/">Go
+						Home</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

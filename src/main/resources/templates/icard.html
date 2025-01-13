@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nikhilbharat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br><br>
+<h1 class="text-center">Nikhil Bharat Bangali Samanwya Samiti Icard <a href="/index" class="btn btn-danger text-right">Back</a>
+<h2 style="text-align:center">Reg : IV-190200734/2020</h2>
+</h1><br><br>
+
+<div class="contact py-sm-5 py-4">
+		<div class="container py-xl-4 py-lg-2">
+		<!-- form -->
+		<form id="form" th:action="@{/image/saveImageDetails}" method="post">
+				<div class="contact-grids1 w3agile-6">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Name</label>
+							<input type="text" class="form-control" placeholder="FULL NAME" id="name" name="name" required="required">
+							<p id="error_name"></p>
+						</div>
+						
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Father's Name</label>
+							<input type="text" class="form-control" placeholder="FATHER'S NAME" id="fathername" name="fathername" required="required">
+							<p id="error_name"></p>
+						</div>
+
+
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Date of birth</label>
+							<input type="text" class="form-control" placeholder="DATE OF BIRTH" id="dob" name="dob" required="required">
+							<p id="error_name"></p>
+						</div>
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Occupation</label>
+							<input type="text" class="form-control" placeholder="OCCUPATION" id="occupation" name="occupation" required="required">
+							<p id="error_name"></p>
+						</div>
+						
+
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Village</label>
+							<input type="text" class="form-control" placeholder="VILLAGE" id="village" name="village" required="required">
+							<p id="error_name"></p>
+						</div>
+
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Post</label>
+							<input type="text" class="form-control" placeholder="POST" id="post" name="post" required="required">
+							<p id="error_name"></p>
+						</div>
+
+
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Dist</label>
+							<input type="text" class="form-control" placeholder="DIST" id="dist" name="dist" required="required">
+							<p id="error_name"></p>
+						</div>
+
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">City</label>
+							<input type="text" class="form-control" placeholder="CITY" id="city" name="city" required="required">
+							<p id="error_name"></p>
+						</div>
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Pin</label>
+							<input type="text" class="form-control" placeholder="PIN" id="pin" name="pin" required="required">
+							<p id="error_name"></p>
+						</div>
+						
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">State</label>
+							<input type="text" class="form-control" placeholder="STATE" id="state" name="state" required="required">
+							<p id="error_name"></p>
+						</div>
+						
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Contact</label>
+							<input type="text" class="form-control" placeholder="CONTACT" id="contact" name="contact" required="required">
+							<p id="error_name"></p>
+						</div>
+						
+							
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Gender</label>
+							<input type="text" class="form-control" placeholder="GENDER" id="gender" name="gender" required="required">
+							<p id="error_name"></p>
+						</div>					
+						
+						
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Image</label>
+							<input type="file" class="form-control" placeholder="" name="image" id="image" required="required">
+							<p id="error_file"></p>
+						</div>
+						
+
+					</div>
+					
+						<div class="right-w3l col-md-6">
+							<input type="button" id="submit" class="btn btn-primary form-control" value="Submit">
+							<br><br>
+						</div>
+						<a href="/image/show" style="float:left;" class="btn btn-success text-right">Show All</a>
+				</div>
+				<br>
+				<div id="success" class="text-center" style="color:green;"></div>
+				<div id="error" class="text-center" style="color:red;"></div>
+			</form>
+		</div>
+	</div>
+<p class="text-center">
+  	<img src="/images/loader.gif" alt="loader" style="width: 150px;height: 120px;" id="loader">
+</p>
+	<script src="/js/product.js"></script>
+</body>
+</html>

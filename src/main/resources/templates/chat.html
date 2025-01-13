@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NikhilVarat</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<h1 class="text-center">
+		Nikhil bharat Chat Box <a href="/index" class="btn btn-danger text-right">Back</a>
+		<h1>Here We may connect and put our thought together .</h1>
+
+		<div>
+
+			<table id="" class="table table-striped table-bordered text-center">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Pic</th>
+						<th>Chat Box</th>
+					</tr>
+				</thead>
+				<tbody th:with="count=0">
+					<tr th:each="chats: ${chat}">
+						<td th:text="${chats.name}"></td>
+						<td><img th:src="@{${'/chat/display/'+ chats.id}}"
+							class="card img-fluid" style="width: 100px" alt="" /></td>
+						<td th:text="${chats.text}"></td>
+						<td
+							th:text="${#dates.format({chats.createDate}, 'dd-MM-yyyy')}" /></td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+		</div>
+
+		<br> <br>
+
+	</h1>
+	<br>
+	<br>
+
+
+
+
+	<div class="contact py-sm-5 py-4">
+
+
+
+
+
+
+		<!--   #--------------------- ->
+		<div class="container py-xl-4 py-lg-2">
+		<!-- form -->
+		<form id="form" th:action="@{/chat/saveChat}" method="post">
+			<div class="contact-grids1 w3agile-6">
+				<div class="row">
+					<div class="col-sm-5 col-sm-2 contact-form1 form-group">
+						<label class="col-form-label">Name</label> <input type="text"
+							class="form-control" placeholder="You have to must enter your name to continue chat" id="name" name="name"
+							required="required">
+						<p id="error_name"></p>
+					</div>
+					<div class="col-sm-3 col-sm-2 contact-form1 form-group">
+						<label class="col-form-label"><h6>Text</h6></label>
+						<textarea class="form-control" placeholder="Text here" id="text"
+							rows="1" cols="45" name="text"></textarea>
+						<p id="error_description"></p>
+					</div>
+
+
+					<div class="col-sm-3 col-sm-2 contact-form1 form-group">
+						<label class="col-form-label"></label> <input type="file"
+							class="form-control" placeholder="image" name="image" id="image">
+						<p id="error_file"></p>
+					</div>
+
+					<div class="right-sm col-sm-1">
+						<label class="col-form-label"></label> <input type="button"
+							id="submit" class="btn btn-primary form-control" value="Submit">
+
+					</div>
+				</div>
+
+
+			</div>
+			<br>
+			<div id="success" class="text-center" style="color: green;"></div>
+			<div id="error" class="text-center" style="color: red;"></div>
+		</form>
+	</div>
+	</div>
+	<p class="text-center">
+		<img src="/images/loader.gif" alt="loader"
+			style="width: 150px; height: 120px;" id="loader">
+	</p>
+	<script src="/js/chat.js"></script>
+
+
+
+
+
+</body>
+</html>

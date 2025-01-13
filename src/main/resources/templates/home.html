@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style> 
+*{
+margin: 0;
+padding: 0;
+
+border:0;
+
+}
+		body { 
+			margin: 0; 
+			padding: 0;
+    background-image: url("images/hindu_refugee.jpg");
+
+  background-size: cover;
+  background-attachment: fixed; 
+		} 
+.images{
+ width:200px; 
+ height:400px;
+ }
+		
+	</style>
+
+    <img class="images" src="static/images" th:src="@{/images/hindu_refugee_2.jpg}"/>
+        <img class="images" src="static/images" th:src="@{/images/bengali-hindu-refugees.jpg}"/>
+        <img class="images" src="static/images" th:src="@{/images/hindus.jpg}"/>
+        <img class="images" src="static/images" th:src="@{/images/Refugee_3.jpg}"/>
+    
+    
+    
+
+
+</body>
+</html>
